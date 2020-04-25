@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Lunch</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+    <ion-label> <ion-icon name="restaurant"></ion-icon></ion-label>
+      <ion-input placeholder="Add Lunch" [(ngModel)]="lunch" type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div class="btn-center-align" padding><!--databind lunch and submit to console-->
+    <ion-button color="primary" shape="round" (click)="submit()">Submit</ion-button>
+  </div>
+</ion-content>

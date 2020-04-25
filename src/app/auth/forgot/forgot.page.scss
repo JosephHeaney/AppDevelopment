@@ -1,0 +1,34 @@
+ion-content{//background image for app 
+    --background:url(../../../assets/600x1024-Background-HD-Wallpaper-482-300x512.jpg) center center / cover;
+}
+
+ion-content > ion-list{
+    position: relative;
+    top: 30%;
+}
+
+.btn-center-align{
+    text-align: center!important;
+}
+
+.btn-center-align ion-button{
+    color: blue;
+}
+
+.btn-center-align ion-button:hover{
+    color: black;
+}
+
+ion-item{
+    --background: transparent;
+    color: blue;
+    --min-height: 40px;
+}
+
+ion-list{
+    background-color: transparent;
+}
+
+:host{
+    --min-width: 39px;
+}

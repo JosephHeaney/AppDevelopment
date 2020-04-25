@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar><!--menu list-->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content><!--Espn news feed-->
+  <ion-card *ngFor="let article of data?.articles">
+    <img [src]="article.urlToImage"/>
+    <ion-card-header>
+      <ion-card-subtitle>Title</ion-card-subtitle>
+      <ion-card-title>{{article.Title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{article.description}}
+    </ion-card-content>
+
+
+  </ion-card>
+
+</ion-content>

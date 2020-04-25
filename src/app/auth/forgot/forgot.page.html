@@ -1,0 +1,12 @@
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label> <ion-icon name="person"></ion-icon></ion-label>
+      <ion-input placeholder="Username"[(ngModel)]="user" type="text"></ion-input>
+    </ion-item>
+    <div class="btn-center-align" padding><!-- enter username then enter to homepage-->
+      <ion-button color="primary" shape="round" routerLink="/home" (click)="submit()">Submit</ion-button><br>
+    </div>
+  </ion-list>
+
+</ion-content>
